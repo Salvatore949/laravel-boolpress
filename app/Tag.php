@@ -10,4 +10,10 @@ class Tag extends Model
     'nome',
     'descrizione',
     ];
+
+    public function posts() {
+
+        return $this -> belongsToMany(Post::class);
+
+    }
 }
