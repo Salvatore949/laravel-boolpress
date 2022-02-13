@@ -4,6 +4,13 @@
 
 <body>
    <h1>Posts</h1>
+
+   @auth
+ 
+   <a href="{{route('post.create')}}"> Create new post</a> <br>
+
+   @endauth
+
    <table border="2">
      <tr>
         <th>titolo</th>
