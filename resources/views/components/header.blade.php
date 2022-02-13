@@ -34,6 +34,7 @@
     @else
 
     <h2> Hello to {{Auth::user() -> name }}</h2>
+    <a href="{{route('logout')}}"> LOGOUT</a>
 
     @endguest
 
