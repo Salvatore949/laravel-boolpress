@@ -14,6 +14,8 @@
    <td>{{$post -> testo}}</td> 
    <td>{{$post -> autore}}</td> 
    <td>{{$post -> data}}</td> 
+   <td>{{$post -> category -> name}}</td>
+   <td></td>
    <td>{{$post -> created_at -> format('d/m/Y - H:m')}}</td>  <br>
     
     @endforeach
