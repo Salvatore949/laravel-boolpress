@@ -18,10 +18,10 @@ class CreatePostsTable extends Migration
 
             $table->string('titolo',200);
             $table->string('sottotitolo',350);
-            $table->text('testo');
-            $table->string('autore',60);
-            $table->date('data');
-            $table -> bigInteger('category_id') ->unsigned();
+            $table->text('testo')->nullable();
+            $table->string('autore',60)->nullable();
+            $table->date('data')->nullable();
+            $table -> bigInteger('category_id') ->unsigned()->nullable();
 
             $table->timestamps();
         });

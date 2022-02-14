@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'GuestController@home') -> name('home');
 
 Route::get('/post/create', 'HomeController@create') -> name('post.create');
+Route::post('/post/store', 'HomeController@store') -> name('post.store');
 
 Route::get('/logout', 'Auth\LoginController@logout') -> name('logout');
 Route::post('/login', 'Auth\LoginController@login') -> name('login');
